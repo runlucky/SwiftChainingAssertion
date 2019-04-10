@@ -10,7 +10,7 @@ import Foundation
 import XCTest
 
 extension Equatable {
-    public func `is`(_ value: Self.Type) {
-        
+    public func `is`(_ value: Self) {
+        XCTAssertEqual(self, value)
     }
 }

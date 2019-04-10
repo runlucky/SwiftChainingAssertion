@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19CA8780225E1FD700F6C77E /* SwiftChainingAssertion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F4D98B225E16340073109C /* SwiftChainingAssertion.swift */; };
 		19F4D97B225E12E00073109C /* SwiftChainingAssertion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F4D971225E12E00073109C /* SwiftChainingAssertion.framework */; };
 		19F4D980225E12E00073109C /* SwiftChainingAssertionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F4D97F225E12E00073109C /* SwiftChainingAssertionTests.swift */; };
 		19F4D982225E12E00073109C /* SwiftChainingAssertion.h in Headers */ = {isa = PBXBuildFile; fileRef = 19F4D974225E12E00073109C /* SwiftChainingAssertion.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		19F4D98C225E16340073109C /* SwiftChainingAssertion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F4D98B225E16340073109C /* SwiftChainingAssertion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -198,7 +198,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19F4D98C225E16340073109C /* SwiftChainingAssertion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -207,6 +206,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				19F4D980225E12E00073109C /* SwiftChainingAssertionTests.swift in Sources */,
+				19CA8780225E1FD700F6C77E /* SwiftChainingAssertion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,7 +399,6 @@
 		19F4D989225E12E00073109C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S8M9V325CJ;
 				INFOPLIST_FILE = SwiftChainingAssertionTests/Info.plist;
@@ -418,7 +417,6 @@
 		19F4D98A225E12E00073109C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S8M9V325CJ;
 				INFOPLIST_FILE = SwiftChainingAssertionTests/Info.plist;
