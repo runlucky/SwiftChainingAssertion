@@ -26,22 +26,10 @@ class SwiftChainingAssertionTests: XCTestCase {
         10.is { 2 + 8 }
         "foo".isNot { "fooo" }
     }
-//
-//    func testIs() {
-//        10.is(10)
-//        10.isNot(11)
-//
-//        true.is(true)
-//        true.isNot(false)
-//
-//        "".is("")
-//        "".isNot("a")
-//    }
-
 
     func testBool() {
-        ///10.isTrue(10)
-        //10.isNot(11)
+        "foo".starts(with: "f").isTrue()
+        "foo".starts(with: "b").isFalse()
     }
 
 }

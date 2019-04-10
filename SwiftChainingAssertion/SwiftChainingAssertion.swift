@@ -27,3 +27,13 @@ public extension Equatable {
     }
 
 }
+
+public extension Bool {
+    public func isTrue() {
+        XCTAssertTrue(self)
+    }
+    
+    public func isFalse() {
+        XCTAssertFalse(self)
+    }
+}
