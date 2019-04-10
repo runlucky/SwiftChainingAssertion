@@ -28,6 +28,20 @@ public extension Equatable {
 
 }
 
+public extension Array where Element: Equatable {
+    public func isAll(_ predicate: (Element) -> Bool) {
+        for x in self {
+            predicate(x).isTrue()
+        }
+    }
+    
+    public func isNotAll(_ predicate: (Element) -> Bool) {
+        for x in self {
+            predicate(x).isFalse()
+        }
+    }
+}
+
 public extension Bool {
     public func isTrue() {
         XCTAssertTrue(self)
