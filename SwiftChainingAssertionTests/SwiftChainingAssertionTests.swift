@@ -21,15 +21,21 @@ class SwiftChainingAssertionTests: XCTestCase {
         "".is("")
         "".isNot("a")
     }
-    
+
     func testIsClosure() {
         10.is { 2 + 8 }
         "foo".isNot { "fooo" }
+    }
+
+    func testIsArray() {
+        let list = [1, 2, 3, 4, 5]
+        list.is([1, 2, 3, 4, 5])
+
+        (1...5).isNot(1...4)
     }
 
     func testBool() {
         "foo".starts(with: "f").isTrue()
         "foo".starts(with: "b").isFalse()
     }
-
 }
