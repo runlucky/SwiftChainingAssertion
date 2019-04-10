@@ -9,8 +9,21 @@
 import Foundation
 import XCTest
 
-extension Equatable {
+public extension Equatable {
     public func `is`(_ value: Self) {
         XCTAssertEqual(self, value)
     }
+
+    public func isNot(_ value: Self) {
+        XCTAssertNotEqual(self, value)
+    }
+
+    public func `is`(_ predicate: () -> Self) {
+        XCTAssertEqual(self, predicate())
+    }
+    
+    public func isNot(_ predicate: () -> Self) {
+        XCTAssertNotEqual(self, predicate())
+    }
+
 }
