@@ -21,11 +21,20 @@ public extension Equatable {
     public func `is`(_ predicate: () -> Self) {
         XCTAssertEqual(self, predicate())
     }
-    
+
     public func isNot(_ predicate: () -> Self) {
         XCTAssertNotEqual(self, predicate())
     }
+}
 
+public extension Optional {
+    public func isNil() {
+        XCTAssertNil(self)
+    }
+
+    public func isNotNil() {
+        XCTAssertNotNil(self)
+    }
 }
 
 public extension Array where Element: Equatable {
@@ -34,7 +43,7 @@ public extension Array where Element: Equatable {
             predicate(x).isTrue()
         }
     }
-    
+
     public func isNotAll(_ predicate: (Element) -> Bool) {
         for x in self {
             predicate(x).isFalse()
@@ -46,7 +55,7 @@ public extension Bool {
     public func isTrue() {
         XCTAssertTrue(self)
     }
-    
+
     public func isFalse() {
         XCTAssertFalse(self)
     }

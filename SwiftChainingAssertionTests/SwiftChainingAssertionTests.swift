@@ -41,4 +41,11 @@ class SwiftChainingAssertionTests: XCTestCase {
         "foo".starts(with: "f").isTrue()
         "foo".starts(with: "b").isFalse()
     }
+
+    func testNil() {
+        let nilable1: Int? = nil
+        let nilable2: Int? = 10
+        nilable1.isNil()
+        nilable2.isNotNil()
+    }
 }
