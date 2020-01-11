@@ -12,19 +12,14 @@ import Foundation
 
 class ExceptionTests: XCTestCase {
     func testException() {
-        Throws(FooError.self) {
+        Throws(Error.self) {
             throw FooError.foo
         }
     }
 
-    func testExceptionFail1() {
+    func testExceptionSpecifiedType() {
         Throws(FooError.self) {
-            throw BarError.bar
-        }
-    }
-
-    func testExceptionFail2() {
-        Throws(FooError.self) {
+            throw FooError.foo
         }
     }
 
@@ -32,8 +27,19 @@ class ExceptionTests: XCTestCase {
         NoThrows {
         }
     }
+    
+    func testExceptionFail_InvalidType() {
+        Throws(FooError.self) {
+            throw BarError.bar
+        }
+    }
 
-    func testNoExceptionFail() {
+    func testExceptionFail_NoThrows() {
+        Throws(FooError.self) {
+        }
+    }
+
+    func testNoExceptionFail_Throws() {
         NoThrows {
             throw FooError.foo
         }
