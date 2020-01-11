@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		19671FA523C97959000AB04C /* IsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19671FA423C97959000AB04C /* IsTests.swift */; };
+		19671FA723C97997000AB04C /* ExceptionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19671FA623C97997000AB04C /* ExceptionTests.swift */; };
+		19671FA923C97A0C000AB04C /* BoolTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19671FA823C97A0C000AB04C /* BoolTests.swift */; };
+		19671FAB23C97A1F000AB04C /* NilTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19671FAA23C97A1F000AB04C /* NilTests.swift */; };
 		19CA8780225E1FD700F6C77E /* SwiftChainingAssertion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F4D98B225E16340073109C /* SwiftChainingAssertion.swift */; };
 		19F4D97B225E12E00073109C /* SwiftChainingAssertion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F4D971225E12E00073109C /* SwiftChainingAssertion.framework */; };
-		19F4D980225E12E00073109C /* SwiftChainingAssertionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F4D97F225E12E00073109C /* SwiftChainingAssertionTests.swift */; };
+		19F4D980225E12E00073109C /* ArrayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19F4D97F225E12E00073109C /* ArrayTests.swift */; };
 		19F4D982225E12E00073109C /* SwiftChainingAssertion.h in Headers */ = {isa = PBXBuildFile; fileRef = 19F4D974225E12E00073109C /* SwiftChainingAssertion.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -24,11 +28,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		19671FA423C97959000AB04C /* IsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IsTests.swift; sourceTree = "<group>"; };
+		19671FA623C97997000AB04C /* ExceptionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExceptionTests.swift; sourceTree = "<group>"; };
+		19671FA823C97A0C000AB04C /* BoolTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoolTests.swift; sourceTree = "<group>"; };
+		19671FAA23C97A1F000AB04C /* NilTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NilTests.swift; sourceTree = "<group>"; };
 		19F4D971225E12E00073109C /* SwiftChainingAssertion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftChainingAssertion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		19F4D974225E12E00073109C /* SwiftChainingAssertion.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftChainingAssertion.h; sourceTree = "<group>"; };
 		19F4D975225E12E00073109C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		19F4D97A225E12E00073109C /* SwiftChainingAssertionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftChainingAssertionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		19F4D97F225E12E00073109C /* SwiftChainingAssertionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftChainingAssertionTests.swift; sourceTree = "<group>"; };
+		19F4D97F225E12E00073109C /* ArrayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayTests.swift; sourceTree = "<group>"; };
 		19F4D981225E12E00073109C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		19F4D98B225E16340073109C /* SwiftChainingAssertion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftChainingAssertion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -83,8 +91,12 @@
 		19F4D97E225E12E00073109C /* SwiftChainingAssertionTests */ = {
 			isa = PBXGroup;
 			children = (
-				19F4D97F225E12E00073109C /* SwiftChainingAssertionTests.swift */,
 				19F4D981225E12E00073109C /* Info.plist */,
+				19F4D97F225E12E00073109C /* ArrayTests.swift */,
+				19671FA823C97A0C000AB04C /* BoolTests.swift */,
+				19671FA623C97997000AB04C /* ExceptionTests.swift */,
+				19671FA423C97959000AB04C /* IsTests.swift */,
+				19671FAA23C97A1F000AB04C /* NilTests.swift */,
 			);
 			path = SwiftChainingAssertionTests;
 			sourceTree = "<group>";
@@ -205,8 +217,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19F4D980225E12E00073109C /* SwiftChainingAssertionTests.swift in Sources */,
+				19F4D980225E12E00073109C /* ArrayTests.swift in Sources */,
+				19671FAB23C97A1F000AB04C /* NilTests.swift in Sources */,
+				19671FA723C97997000AB04C /* ExceptionTests.swift in Sources */,
+				19671FA523C97959000AB04C /* IsTests.swift in Sources */,
 				19CA8780225E1FD700F6C77E /* SwiftChainingAssertion.swift in Sources */,
+				19671FA923C97A0C000AB04C /* BoolTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
