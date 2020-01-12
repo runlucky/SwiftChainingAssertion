@@ -61,21 +61,27 @@ public extension Bool {
     }
 }
 
-public func Throws<T>(_ type: T.Type, _ predicate: () throws -> Void) {
-    do {
-        try predicate()
-        XCTFail()
-    } catch is T {
-        
-    } catch {
-        XCTFail()
+public class Throws<T: Error> {
+    @discardableResult
+    public init(_ predicate: () throws -> Void) {
+        do {
+            try predicate()
+            XCTFail()
+        } catch is T {
+            
+        } catch {
+            XCTFail()
+        }
     }
 }
 
-public func NoThrows(_ predicate: () throws -> Void) {
-    do {
-        try predicate()
-    } catch {
-        XCTFail()
+public class NoThrows {
+    @discardableResult
+    public init(_ predicate: () throws -> Void) {
+        do {
+            try predicate()
+        } catch {
+            XCTFail()
+        }
     }
 }

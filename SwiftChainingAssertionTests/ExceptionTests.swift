@@ -12,13 +12,13 @@ import Foundation
 
 class ExceptionTests: XCTestCase {
     func testException() {
-        Throws(Error.self) {
+        Throws<Error> {
             throw FooError.foo
         }
     }
 
     func testExceptionSpecifiedType() {
-        Throws(FooError.self) {
+        Throws<FooError> {
             throw FooError.foo
         }
     }
@@ -29,13 +29,13 @@ class ExceptionTests: XCTestCase {
     }
     
     func testExceptionFail_InvalidType() {
-        Throws(FooError.self) {
+        Throws<FooError> {
             throw BarError.bar
         }
     }
 
     func testExceptionFail_NoThrows() {
-        Throws(FooError.self) {
+        Throws<FooError> {
         }
     }
 
